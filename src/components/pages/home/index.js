@@ -11,6 +11,7 @@ import GIT from '../../images/GIT.png'
 import VS from '../../images/VS.png'
 import Card from '../../card'
 import { ContactMeButton, AllProjectsButton } from '../../buttons'
+import Footer from '../../footer'
 
 const Home = () => {
     const sendToHeader = {
@@ -18,7 +19,7 @@ const Home = () => {
         second: 'WEB-DESIGNER'
     }
     return (
-        <div className="mx-auto max-w-[1440px] min-w-[372px]">
+        <div>
             <Header sendToHeader={sendToHeader} />
 
             <div className='bg-white pt-[60px] '>
@@ -98,7 +99,7 @@ const Home = () => {
                 <Card />
                 <Card />
             </div>
-            <div className='mx-auto w-[297px] flex flex-col gap-[48px]'>
+            <div className='mx-auto w-[297px] flex flex-col gap-[48px] mb-[60px]'>
                 <AllProjectsButton />
                 <ContactMeButton />
             </div>
