@@ -11,7 +11,6 @@ import GIT from '../../images/GIT.png'
 import VS from '../../images/VS.png'
 import Card from '../../card'
 import { ContactMeButton, AllProjectsButton } from '../../buttons'
-import Footer from '../../footer'
 
 const Home = () => {
     const sendToHeader = {

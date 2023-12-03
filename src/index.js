@@ -4,12 +4,19 @@ import reportWebVitals from './reportWebVitals';
 import Home from './components/pages/home';
 import './index.css'
 import Footer from './components/footer';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import { routes } from './components/routes';
+
+const router = createBrowserRouter(routes);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div className='mx-auto max-w-[1440px] min-w-[372px]'>
-      <Home />
+      <RouterProvider router={router} />
       <Footer />
     </div>
 

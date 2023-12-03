@@ -5,9 +5,9 @@ const Footer = () => {
     return (
         <div className="bg-black text-white w-[372px] h-[300px] sm:w-[1440px] sm:h-[400px] pt-[83px] sm:pt-[160px] px-[37px] sm:px-[120px] sm:flex sm:justify-between">
             <div className="w-[298px] sm:w-[374px] sm:h-[40px] gap-[30px] flex justify-between mb-[60px]">
-                <a href="/" className='hover:bg-gray-600 transition duration-300 ease-in-out'>PROJECTS</a>
-                <a href="/" className='hover:bg-gray-600 transition duration-300 ease-in-out'>ABOUT ME</a>
-                <a href="/" className='hover:bg-gray-600 transition duration-300 ease-in-out'>CONTACT</a>
+                <a href="/Projects" className='hover:bg-gray-600 transition duration-300 ease-in-out'>PROJECTS</a>
+                <a href="/About" className='hover:bg-gray-600 transition duration-300 ease-in-out'>ABOUT ME</a>
+                <a href="/Contact" className='hover:bg-gray-600 transition duration-300 ease-in-out'>CONTACT</a>
             </div>
             <div>
                 <div className='flex gap-[21px] sm:gap-[400px]'>
