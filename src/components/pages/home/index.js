@@ -1,4 +1,4 @@
-import rpLogoWhite from '../../images/rpLogoWhite.png'
+import Header from '../../header'
 import HTML from '../../images/HTML.png'
 import CSS from '../../images/CSS.png'
 import JAVASCRIPT from '../../images/JAVASCRIPT.png'
@@ -9,32 +9,19 @@ import FIGMA from '../../images/FIGMA.png'
 import NPM from '../../images/NPM.png'
 import GIT from '../../images/GIT.png'
 import VS from '../../images/VS.png'
+import Card from '../../card'
+import { ContactMeButton, AllProjectsButton } from '../../buttons'
 
 const Home = () => {
+    const sendToHeader = {
+        first: 'YOUR NAME',
+        second: 'WEB-DESIGNER'
+    }
     return (
         <div className="mx-auto max-w-[1440px] min-w-[372px]">
-            <div className="bg-black h-[810px]">
-                <div className="flex justify-between">
-                    <div className='mt-[26px] sm:mt-[60px] ml-[36px] sm:ml-[120px]'>
-                        <img src={rpLogoWhite} className='w-[40px] sm:w-[80px]' alt="logo" />
-                    </div>
-                    <div className="flex flex-col h-[20px] justify-between items-end mt-[26px] sm:mt-[60px] mr-[36px] sm:mr-[120px]">
-                        <div className="bg-white w-[31.25px] h-[3px]"></div>
-                        <div className="bg-white w-[25px] h-[3px]"></div>
-                        <div className="bg-white w-[18.75px] h-[3px]"></div>
-                    </div>
-                </div>
-                <div className='w-[298px] sm:w-300 lg:w-full mt-[204px] mx-auto text-center text-white'>
-                    <h1 className='text-6xl mb-[5px]  '>
-                        YOUR NAME
-                    </h1>
-                    <p className='text-2xl w-[160px] sm:w-300 lg:w-full mx-auto text-center tracking-wider'>
-                        WEB-DESIGNER
-                    </p>
-                </div>
-            </div>
+            <Header sendToHeader={sendToHeader} />
 
-            <div className='bg-white pt-[60px] mb-[60px]'>
+            <div className='bg-white pt-[60px] '>
                 <div className='w-[298px] sm:w-[560px] mx-auto'>
 
                     {/* about me */}
@@ -57,8 +44,8 @@ const Home = () => {
                             My Skills
                         </h2>
                     </div>
-                    <div className='flex justify-between sm:flex-col'>
-                        <div className='flex flex-col justify-between sm:flex-row gap-[10px] w-[103px] sm:w-[560px] h-[74px] sm:h-[54px]'>
+                    <div className='flex justify-between sm:flex-col mb-[60px] sm:mb-[100px]'>
+                        <div className='flex flex-col justify-between sm:flex-row gap-[10px] w-[103px] sm:w-[560px]'>
                             <div>
                                 <img src={HTML} alt="HTML" className='inline mr-[5px]' />
                                 <span>HTML</span>
@@ -103,7 +90,17 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
+
                 </div>
+            </div>
+            <div className='flex flex-col sm:flex-row sm:justify-between gap-[30px] w-[298px] sm:w-[1200px]  mx-auto mb-[38px] sm:mb-[80px]'>
+                <Card />
+                <Card />
+                <Card />
+            </div>
+            <div className='mx-auto w-[297px] flex flex-col gap-[48px]'>
+                <AllProjectsButton />
+                <ContactMeButton />
             </div>
         </div>
 
