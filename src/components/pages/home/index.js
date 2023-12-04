@@ -27,7 +27,7 @@ const Home = () => {
                     {/* about me */}
 
                     <div className='mb-[20px] '>
-                        <h2 className='text-24 font-bold'>
+                        <h2 className='text-2xl font-bold'>
                             About me
                         </h2>
                     </div>
@@ -40,7 +40,7 @@ const Home = () => {
                     {/* skills */}
 
                     <div className='mb-[20px]  '>
-                        <h2 className='text-24 font-bold'>
+                        <h2 className='text-2xl font-bold'>
                             My Skills
                         </h2>
                     </div>
@@ -93,7 +93,7 @@ const Home = () => {
 
                 </div>
             </div>
-            <div className='flex flex-col sm:flex-row sm:justify-between gap-[30px] w-[298px] sm:w-[1200px]  mx-auto mb-[38px] sm:mb-[80px]'>
+            <div className='flex flex-col lg:justify-between lg:flex-row lg:flex-wrap lg:w-[1140px] gap-[30px] w-[298px]  mx-auto mb-[38px] sm:mb-[80px]'>
                 <Card />
                 <Card />
                 <Card />

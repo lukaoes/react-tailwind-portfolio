@@ -8,7 +8,8 @@ const Header = (props) => {
         <div className="bg-black h-[810px]">
             <div className="flex justify-between">
                 <div className='mt-[26px] sm:mt-[60px] ml-[36px] sm:ml-[120px]'>
-                    <img src={rpLogoWhite} className='w-[40px] sm:w-[80px]' alt="logo" />
+                    <a href="/" ><img src={rpLogoWhite} className='w-[40px] sm:w-[80px]' alt="logo" />
+                    </a>
                 </div>
                 <div className="flex flex-col h-[20px] justify-between items-end mt-[26px] sm:mt-[60px] mr-[36px] sm:mr-[120px]">
                     <div className="bg-white w-[31.25px] h-[3px]"></div>
