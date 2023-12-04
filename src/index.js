@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import './index.css'
-import Footer from './components/footer';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,12 +10,13 @@ import { routes } from './components/routes';
 
 const router = createBrowserRouter(routes);
 
+console.log(routes)
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div className='mx-auto max-w-[1440px] min-w-[372px]'>
       <RouterProvider router={router} />
-      <Footer />
     </div>
 
   </React.StrictMode>

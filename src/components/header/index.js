@@ -1,21 +1,25 @@
 import rpLogoWhite from '../images/rpLogoWhite.png'
 
 const Header = (props) => {
-
     const data = props.sendToHeader
 
     return (
+
         <div className="bg-black h-[810px]">
             <div className="flex justify-between">
                 <div className='mt-[26px] sm:mt-[60px] ml-[36px] sm:ml-[120px]'>
                     <a href="/" ><img src={rpLogoWhite} className='w-[40px] sm:w-[80px]' alt="logo" />
                     </a>
                 </div>
-                <div className="flex flex-col h-[20px] justify-between items-end mt-[26px] sm:mt-[60px] mr-[36px] sm:mr-[120px]">
-                    <div className="bg-white w-[31.25px] h-[3px]"></div>
-                    <div className="bg-white w-[25px] h-[3px]"></div>
-                    <div className="bg-white w-[18.75px] h-[3px]"></div>
-                </div>
+                <a href='/Menu'>
+                    <div className="cursor-pointer flex flex-col h-[20px] justify-between items-end mt-[26px] sm:mt-[60px] mr-[36px] sm:mr-[120px]">
+
+                        <div className="bg-white w-[31.25px] h-[3px]"></div>
+                        <div className="bg-white w-[25px] h-[3px]"></div>
+                        <div className="bg-white w-[18.75px] h-[3px]"></div>
+
+                    </div>
+                </a>
             </div>
             <div className='w-[298px] sm:w-300 lg:w-full mt-[204px] mx-auto text-center text-white'>
                 <h1 className='text-6xl mb-[5px]  '>
